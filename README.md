@@ -1,6 +1,7 @@
 # lyrics-mcp
 
 An MCP server that writes original song lyrics with Claude.
+Built by the team behind [MuseGen](https://www.musegen.ai), an AI music platform.
 
 Give it a brief, get back a title and a full set of lyrics marked up with English
 section tags — `[Verse]`, `[Pre-Chorus]`, `[Chorus]`, `[Bridge]`, `[Outro]` — that stay
@@ -128,6 +129,26 @@ Every call is billed to your key at your model's rates. A song is typically a fe
 thousand output tokens. Check [Anthropic's pricing](https://www.anthropic.com/pricing)
 for the current numbers, and set `LYRICS_MCP_MODEL` to a smaller model if you would
 rather trade some quality for cost.
+
+## From MuseGen
+
+`lyrics-mcp` is built by the team behind **[MuseGen](https://www.musegen.ai)**, an AI music
+platform that takes an idea all the way to a finished track — lyrics, vocals, instrumentals
+and music videos, in the browser.
+
+This server stays independent of it. It runs on your machine, calls the Anthropic API with
+your key, and never talks to MuseGen. The hosted tools below are there if you would rather
+not run anything, or if you want to hear the lyrics actually sung.
+
+| Tool | What it does |
+| --- | --- |
+| [Lyrics Generator](https://www.musegen.ai/lyrics-generator) | This tool, in a browser. Pick genre, mood, language and structure, then copy the lyrics or turn them straight into a song. |
+| [AI Song Maker](https://www.musegen.ai/ai-song-maker) | Paste in lyrics this server wrote and get a produced track — vocals or instrumental, in a style you choose. |
+| [AI Music Prompts](https://www.musegen.ai/ai-music-prompts) | Free copy-and-paste style prompts by genre, for whichever generation model you use. |
+| [Music Video Generator](https://www.musegen.ai/mv-generation) | Upload the finished track and get an MV back. |
+
+The rest of the kit lives at [musegen.ai/tools](https://www.musegen.ai/tools) — vocal
+remover, BPM detector, key finder, audio-to-MIDI and MP3-to-WAV, all free.
 
 ## Development
 
